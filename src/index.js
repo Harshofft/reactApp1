@@ -1,18 +1,10 @@
 import { createRoot } from "react-dom/client";
 const root = createRoot(document.getElementById("root"));
-// function greet(names) {
-//     console.log(names);
-//     return (<h1>hey{names}</h1>)   
-// }
-const Hello =(probs)=>{
-    console.log(probs);
-    return (<h1>hello</h1>)
-}
-
-
+import Greetings from "./app";
+import {HelloUser ,HelloUsers} from "./app";
 root.render(<>
-<Hello names="harry" city="newyork"/>
-<h1>Hello World </h1>
-{/* <greet names="harry"/>
-<greet names="harry"/>   */}
-</>);
+<Greetings/>
+<HelloUser name="Harsh" emoji="👋"/>
+<HelloUser name="Harry" emoji="😊"/>
+<HelloUsers name="Harry" emoji="🌄🌄"/>
+</>);    
